@@ -10,7 +10,7 @@
   <Support>TBD</Support>
   <Project>https://github.com/harness/drone</Project>
   <Overview>Drone is a Continuous Integration platform built on Docker.&#xD;
-In this particular case it is the apptemplate for use with GITEA</Overview>
+In this particular case it is the apptemplate for use with Gitea</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:9080]</WebUI>
   <TemplateURL/>
