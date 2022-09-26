@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DRONE-CI-GITEA</Name>
+  <Repository>drone/drone</Repository>
+  <Registry>https://hub.docker.com/r/drone/drone</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>TBD</Support>
+  <Project>https://github.com/harness/drone</Project>
+  <Overview>Drone is a Continuous Integration platform built on Docker.&#xD;
+In this particular case it is the apptemplate for use with GITEA</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:9180]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1664222405</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="HTTP_PORT" Target="80" Default="" Mode="tcp" Description="Container HTTP Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HTTP_PORT" Target="443" Default="" Mode="tcp" Description="Container HTTPS-Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA" Target="/data" Default="/mnt/user/appdata/drone" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_AGENTS_ENABLED" Target="DRONE_AGENTS_ENABLED" Default="false" Mode="" Description="DRONE_AGENTS_ENABLED as true if you want to run server and agent in the same container." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DRONE_GITEA_SERVER" Target="DRONE_GITEA_SERVER" Default="" Mode="" Description="GITEA Server URL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_GITEA_CLIENT_ID" Target="DRONE_GITEA_CLIENT_ID" Default="" Mode="" Description="You need to generate Client ID in GITEA" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_GITEA_CLIENT_SECRET" Target="DRONE_GITEA_CLIENT_SECRET" Default="" Mode="" Description="You need to generate Client Secret in GITEA" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_RPC_SECRET" Target="DRONE_RPC_SECRET" Default="" Mode="" Description="Required literal value provides the Drone shared secret. This is used to authenticate the RPC connection to the server. The server and runners must be provided the same secret value." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_SERVER_HOST" Target="DRONE_SERVER_HOST" Default="" Mode="" Description="Your Drone Server URL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_SERVER_PROTO" Target="DRONE_SERVER_PROTO" Default="" Mode="" Description="Required string value configures the user-facing protocol. This value is used to create webhooks and redirect urls. It has no actual impact on serving traffic. Values = http / https" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_GIT_ALWAYS_AUTH" Target="DRONE_GIT_ALWAYS_AUTH" Default="true" Mode="" Description="Optional boolean value. Configures Drone to authenticate when cloning public repositories. This is only required when your source code management system (e.g. GitHub Enterprise) has private mode enabled." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DRONE_USER_CREATE" Target="DRONE_USER_CREATE" Default="username:root,admin:true" Mode="" Description="Optional user account that should be created on startup. This should be used to seed the system with an administrative account. It can be a real account (i.e. a real GitHub user) or it can be a machine account." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
