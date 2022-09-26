@@ -14,7 +14,7 @@ In this particular case it is the apptemplate for use with GITEA</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:9180]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://github.com/chrizzo84/unraid-templates/blob/main/icons/drone.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
