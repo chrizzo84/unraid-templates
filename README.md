@@ -7,7 +7,9 @@ This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> 
 The Drone CI template is specially designed for use with Gitea.
 
 ### Description:
-Drone by [Harness™](https://harness.io/) is a modern Continuous Integration platform that empowers busy teams to automate their build, test and release workflows using a powerful, cloud native pipeline engine.
+Drone by [Harness™](https://harness.io/) is a modern Continuous Integration platform that empowers busy teams to automate their build, test and release workflows using a powerful, cloud native pipeline engine. ([Source](https://docs.drone.io)) 
+
+Link to Drone Documentation: https://docs.drone.io
 
 ### Variables:
 | **Variablename**          | **Required** | **Description**                                                                                                                                                                                                    | **Default**              |
@@ -28,4 +30,6 @@ Drone by [Harness™](https://harness.io/) is a modern Continuous Integration pl
 ### Issues:
 If you have any issues please create new Issue [here](https://github.com/chrizzo84/unraid-templates/issues) Tag [Drone].
 For example: [Drone] My Problem
+
+**Please only open issues here that are directly related to the Unraid App template or similar. This is of course not the right and official place for issues that directly concern Drone CI.**
 
