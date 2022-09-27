@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>TBD</Support>
-  <Project>https://github.com/harness/drone</Project>
+  <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
+  <Project>https://github.com/chrizzo84/unraid-templates</Project>
   <Overview>Drone is a Continuous Integration platform built on Docker.&#xD;
 In this particular case it is the apptemplate for use with Gitea</Overview>
   <Category>Productivity:</Category>
