@@ -1,12 +1,12 @@
 # unraid-templates
 Storage for Unraid App templates incl. icons
 
-# License
+# 🔑 License
 This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> See [License](https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/LICENSE?token=GHSAT0AAAAAABXMPMKOUPLGTE3ONEXO7B7KYZSSXZQ)
 
 ---
 ---
-# Table of contents
+# ⚓ Table of contents
 1. [Drone CI Gitea](#Drone)
 2. [Azure DevOps Pipelines Agent](#Agent)
 3. [Issues](#Issues)
@@ -15,7 +15,7 @@ This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> 
 
 <div id='Drone'/>
 
-## Drone CI Gitea
+## ⚒️ Drone CI Gitea
 The Drone CI template is specially designed for use with Gitea.
 
 ### Description:
@@ -44,7 +44,7 @@ Link to Drone Documentation: https://docs.drone.io
 ---
 <div id='Agent'/>
 
-## Azure DevOps Pipelines Agent
+## 🔩 Azure DevOps Pipelines Agent
 Ubuntu 22.04 Azure Pipelines Agent with some preinstalled software.
 
 ### Preinstalled Software:
@@ -82,7 +82,7 @@ Please bind-mount Docker socket.
 ---
 <div id='Issues'/>
 
-# Issues: <a name="Issues"></a>
+# ⚠️ Issues: <a name="Issues"></a>
 If you have any issues please create new Issue [here](https://github.com/chrizzo84/unraid-templates/issues) Tag [Drone].
 For example: [Drone] My Problem
 
