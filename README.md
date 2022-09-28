@@ -1,7 +1,9 @@
 # unraid-templates
 Storage for Unraid App templates incl. icons
 
+# License
 This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> See [License](https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/LICENSE?token=GHSAT0AAAAAABXMPMKOUPLGTE3ONEXO7B7KYZSSXZQ)
+
 ---
 ---
 # Table of contents
