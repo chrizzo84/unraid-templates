@@ -12,7 +12,7 @@
   <Overview>Drone is a Continuous Integration platform built on Docker.&#xD;
 In this particular case it is the apptemplate for use with Gitea</Overview>
   <Category>Productivity:</Category>
-  <WebUI>http://[IP]:[PORT:9080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/drone.png</Icon>
   <ExtraParams/>
