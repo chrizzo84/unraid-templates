@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Azure-Pipelines-Agent</Name>
+  <Repository>chrizzo84/azpipeline</Repository>
+  <Registry>https://hub.docker.com/repository/docker/chrizzo84/azpipeline</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
+  <Project>https://github.com/chrizzo84/unraid-templates</Project>
+  <Overview/>
+  <Category>Productivity:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/azpipeline.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1664389039</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="AZP_URL" Target="AZP_URL" Default="" Mode="" Description="Azure DevOps URL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="AZP_TOKEN" Target="AZP_TOKEN" Default="" Mode="" Description="Personal Access Token" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="AZP_AGENT_NAME" Target="AZP_AGENT_NAME" Default="" Mode="" Description="Name of the Agent" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="AZP_POOL" Target="AZP_POOL" Default="" Mode="" Description="Azure DevOps Agent Pool Name - If not filled out Agent will be installed to Default Agent Pool" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
