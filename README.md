@@ -72,7 +72,11 @@ Ubuntu 22.04 Azure Pipelines Agent with some preinstalled software.
 | AZP_TOKEN        | Personal Access Token                                                                          |
 | AZP_AGENT_NAME   | Name of the Agent                                                                              |
 | AZP_POOL         | Azure DevOps Agent Pool Name - If not filled out Agent will be installed to Default Agent Pool |
+| AZP_WORK         | Work folder (default = _work)
 
+
+### User Docker within Docker container
+Please bind-mount Docker socket.
 
 ---
 ---
