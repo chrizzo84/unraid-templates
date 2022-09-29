@@ -75,7 +75,7 @@ Ubuntu 22.04 Azure Pipelines Agent with some preinstalled software.
 | AZP_WORK         | Work folder (default = _work)
 
 
-### User Docker within Docker container
+### Use Docker within Docker container
 Please bind-mount Docker socket.
 
 ---
@@ -84,8 +84,8 @@ Please bind-mount Docker socket.
 
 # ⚠️ Issues: <a name="Issues"></a>
 If you have any issues please create new Issue [here](https://github.com/chrizzo84/unraid-templates/issues) Tag [Drone].
-For example: [Drone] My Problem
+For example: [Drone] My Problem or [AzPipeline] My Problem
 
-**Please only open issues here that are directly related to the Unraid App template or similar. This is of course not the right and official place for issues that directly concern Drone CI.**
+**Please only open issues here that are directly related to the Unraid App template or similar.**
 
 
