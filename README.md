@@ -83,7 +83,7 @@ Please bind-mount Docker socket.
 <div id='Issues'/>
 
 # ⚠️ Issues: <a name="Issues"></a>
-If you have any issues please create new Issue [here](https://github.com/chrizzo84/unraid-templates/issues) Tag [Drone].
+If you have any issues please create new Issue [here](https://github.com/chrizzo84/unraid-templates/issues) with a tag.
 For example: [Drone] My Problem or [AzPipeline] My Problem
 
 **Please only open issues here that are directly related to the Unraid App template or similar.**
