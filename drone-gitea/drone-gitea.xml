@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Drone-Gitea</Name>
+  <Name>Drone-CI-For-GITEA</Name>
   <Repository>drone/drone</Repository>
   <Registry>https://hub.docker.com/r/drone/drone</Registry>
   <Network>bridge</Network>
@@ -10,7 +10,7 @@
   <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
   <Project>https://github.com/chrizzo84/unraid-templates</Project>
   <Overview>Drone is a Continuous Integration platform built on Docker.&#xD;
-In this particular case it is the apptemplate for use with Gitea</Overview>
+In this particular case it is the apptemplate for use with GITEA</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
@@ -24,9 +24,9 @@ In this particular case it is the apptemplate for use with Gitea</Overview>
   <Requires/>
   <Config Name="HTTP_PORT" Target="80" Default="9080" Mode="tcp" Description="Container HTTP Port" Type="Port" Display="always" Required="true" Mask="false">9080</Config>
   <Config Name="HTTP_PORT" Target="443" Default="9443" Mode="tcp" Description="Container HTTPS-Port" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="DATA" Target="/data" Default="/mnt/user/appdata/drone" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/drone</Config>
+  <Config Name="DATA" Target="/data" Default="/mnt/user/appdata/drone_ci" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/drone</Config>
   <Config Name="DRONE_AGENTS_ENABLED" Target="DRONE_AGENTS_ENABLED" Default="false" Mode="" Description="DRONE_AGENTS_ENABLED as true if you want to run server and agent in the same container." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
-  <Config Name="DRONE_GITEA_SERVER" Target="DRONE_GITEA_SERVER" Default="" Mode="" Description="GITEA Server URL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DRONE_GITEA_SERVER" Target="DRONE_GITEA_SERVER" Default="" Mode="" Description="Your GITEA Server URL" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DRONE_GITEA_CLIENT_ID" Target="DRONE_GITEA_CLIENT_ID" Default="" Mode="" Description="You need to generate Client ID in GITEA" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DRONE_GITEA_CLIENT_SECRET" Target="DRONE_GITEA_CLIENT_SECRET" Default="" Mode="" Description="You need to generate Client Secret in GITEA" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DRONE_RPC_SECRET" Target="DRONE_RPC_SECRET" Default="" Mode="" Description="Required literal value provides the Drone shared secret. This is used to authenticate the RPC connection to the server. The server and runners must be provided the same secret value." Type="Variable" Display="always" Required="true" Mask="false"/>
