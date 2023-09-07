@@ -47,23 +47,27 @@ Link to Drone Documentation: https://docs.drone.io
 ## 🔩 Azure DevOps Pipelines Agent
 Ubuntu 22.04 Azure Pipelines Agent with some preinstalled software.
 
-### Preinstalled Software:
+## Preinstalled Software:
 - OpenJDK17
 - OpenJDK11
 - OpenJDK 8
 - Dotnet 6
+- Dotnet 7
 - Python3
+- npm
 
-### Capabilities:
-| **Env**              | **Path**                                |
+## Capabilities:
+| Env              | Path                                |
 |------------------|-------------------------------------|
 | curl             | /usr/bin/curl                       |
-| dotnet           | /usr/bin/dotnet                     |
+| dotnet           | /usr/lib/dotnet/sdk                 |
 | git              | /usr/bin/git                        |
+| JAVA_HOME_8_X64  | /usr/lib/jvm/java-8-openjdk-amd64   |
 | JAVA_HOME_11_X64 | /usr/lib/jvm/java-11-openjdk-amd64  |
 | JAVA_HOME_17_X64 | /usr/lib/jvm/java-17-openjdk-amd64  |
-| JAVA_HOME_8_X64  | /usr/lib/jvm/java-8-openjdk-amd64   |
 | python3          | /usr/bin/python3                    |
+| node.js          | /usr/bin/nodejs                     |
+| npm              | /usr/bin/npm                     |
 
 ### Variables:
 | **Variablename** | **Description**                                                                                |
