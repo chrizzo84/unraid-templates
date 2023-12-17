@@ -13,7 +13,7 @@
   <Category>Tools: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:8050]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/bambustudio-logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/bambustats.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
