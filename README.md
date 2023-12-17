@@ -48,7 +48,7 @@ Link to Drone Documentation: https://docs.drone.io
 ## 🔩 Azure DevOps Pipelines Agent
 Ubuntu 22.04 Azure Pipelines Agent with some preinstalled software.
 
-## Preinstalled Software:
+### Preinstalled Software:
 - OpenJDK17
 - OpenJDK11
 - OpenJDK 8
@@ -57,7 +57,7 @@ Ubuntu 22.04 Azure Pipelines Agent with some preinstalled software.
 - Python3
 - npm
 
-## Capabilities:
+### Capabilities:
 | Env              | Path                                |
 |------------------|-------------------------------------|
 | curl             | /usr/bin/curl                       |
@@ -89,6 +89,25 @@ Please bind-mount Docker socket.
 
 ## 🖥️ Bambustats <a name="Bambustasts"></a>
 Just a small Dashboard application to track your downloads, likes and how many times your stuff is in collections on Bambu Lab Makerworld page (https://makerworld.com)
+
+## Prerequisites
+Create new folder in your appdata folder and add two new files - ```config.yaml``` and ```items.yaml```
+
+Content for ```config.yaml```:
+```
+date_format: "%d.%m.%Y %H:%M:%S"
+refresh_interval: 600
+```
+
+Content for ```items.yaml```:
+``` 
+- name: Christmas Angel
+  url: https://makerworld.com/en/models/74060#profileId-78577
+- name: CellPhone Holder
+  url: https://makerworld.com/en/models/74050#profileId-78571   
+```
+Just add your URLs to that list and give it a name.
+When App is running also this yaml will be read again, so if you change sth. app does not need to be restarted.
 
 ## Project
 
