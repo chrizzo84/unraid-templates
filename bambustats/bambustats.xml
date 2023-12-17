@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>BambuStats</Name>
+  <Repository>ghcr.io/chrizzo84/bambustats</Repository>
+  <Registry>https://github.com/chrizzo84/bambustats/pkgs/container/bambustats</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
+  <Project>https://github.com/chrizzo84/unraid-templates</Project>
+  <Overview>This is just a small Dashboard application to track your downloads, likes and how many times your stuff is in collections on Bambu Lab Makerworld page (https://makerworld.com)</Overview>
+  <Category>Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:8050]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/bambustudio-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1702790075</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="configs" Target="/app/configs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bambustats</Config>
+  <Config Name="Container Port" Target="8050" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8050</Config>
+</Container>

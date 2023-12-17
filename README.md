@@ -10,6 +10,7 @@ This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> 
 1. [Drone CI Gitea](#Drone)
 2. [Azure DevOps Pipelines Agent](#Agent)
 3. [Issues](#Issues)
+4. [Bambustats](#Bambustats)
 ---
 ---
 
@@ -84,9 +85,21 @@ Please bind-mount Docker socket.
 
 ---
 ---
+<div id='Bambustats'/>
+
+## 🖥️ Bambustats <a name="Bambustasts"></a>
+Just a small Dashboard application to track your downloads, likes and how many times your stuff is in collections on Bambu Lab Makerworld page (https://makerworld.com)
+
+## Project
+
+https://github.com/chrizzo84/bambustats
+
+
+---
+---
 <div id='Issues'/>
 
-# ⚠️ Issues: <a name="Issues"></a>
+# ⚠️ Issues: <a name="Issues">
 If you have any issues please create new Issue [here](https://github.com/chrizzo84/unraid-templates/issues) with a tag.
 For example: [Drone] My Problem or [AzPipeline] My Problem
 
