@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Nginx-Proxy-Manager-JC21</Name>
+  <Repository>docker.io/jc21/nginx-proxy-manager</Repository>
+  <Registry>https://hub.docker.com/r/jc21/nginx-proxy-manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
+  <Project>https://github.com/NginxProxyManager/nginx-proxy-manager?utm_source=nginx-proxy-manager</Project>
+  <Overview>Easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.&#xD;
+&#xD;
+This is always latest image from docker.io/jc21/nginx-proxy-manager&#xD;
+&#xD;
+**NOTE**: Make sure ports **80** and **443** on the internet side of your router are properly forwarded to this container.  See the documentation for more details. **NOTE**:  Default username/password  are: &amp;gt; admin@example.com/changeme.</Overview>
+  <Category>Tools: Network:Web Network:Proxy</Category>
+  <WebUI>http://[IP]:[PORT:2081]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/chrizzo84/unraid-templates/blob/main/icons/nginx-proxy-mng.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1719498392</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUi" Target="81" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2081</Config>
+  <Config Name="HTTP-Port" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2080</Config>
+  <Config Name="HTTPS-Port" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">20443</Config>
+  <Config Name="Data-Folder" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/NginxProxymanager-Latest/data</Config>
+  <Config Name="LetsEncryptPath" Target="/etc/letsencrypt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/NginxProxymanager-Latest/letsencrypt</Config>
+</Container>
