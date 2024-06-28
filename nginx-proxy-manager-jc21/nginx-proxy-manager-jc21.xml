@@ -15,7 +15,7 @@ This is always latest image from docker.io/jc21/nginx-proxy-manager&#xD;
 &#xD;
 **NOTE**: Make sure ports **80** and **443** on the internet side of your router are properly forwarded to this container.  See the documentation for more details. **NOTE**:  Default username/password  are: &amp;gt; admin@example.com/changeme.</Overview>
   <Category>Tools: Network:Web Network:Proxy</Category>
-  <WebUI>http://[IP]:[PORT:2081]</WebUI>
+  <WebUI>http://[IP]:[PORT:81]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/chrizzo84/unraid-templates/blob/main/icons/nginx-proxy-mng.png?raw=true</Icon>
   <ExtraParams/>
