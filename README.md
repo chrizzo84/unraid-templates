@@ -45,14 +45,13 @@ Link to Drone Documentation: https://docs.drone.io
 <div id='Agent'/>
 
 ## 🔩 Azure DevOps Pipelines Agent
-Ubuntu 22.04 Azure Pipelines Agent with some preinstalled software.
+Ubuntu 24.04 Azure Pipelines Agent with some preinstalled software.
 
 ### Preinstalled Software:
 - OpenJDK17
 - OpenJDK11
 - OpenJDK 8
-- Dotnet 6
-- Dotnet 7
+- Dotnet 8
 - Python3
 - npm
 
