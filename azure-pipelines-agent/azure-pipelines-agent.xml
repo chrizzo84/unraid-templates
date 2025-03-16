@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
   <Project>https://github.com/chrizzo84/unraid-templates</Project>
-   <Overview>Ubuntu 22.10 Azure Pipelines Agent with some preinstalled software.&#xD;
+   <Overview>Ubuntu 24.04 Azure Pipelines Agent with some preinstalled software.&#xD;
 Please see projectpage for list of preinstalled software.</Overview>
   <Category>Productivity:</Category>
   <WebUI/>
