@@ -9,7 +9,8 @@ This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> 
 # ⚓ Table of contents
 1. [Drone CI Gitea](#Drone)
 2. [Azure DevOps Pipelines Agent](#Agent)
-3. [Issues](#Issues)
+3. [Ollama UI](#OllamaUI)
+4. [Issues](#Issues)
 ---
 ---
 
@@ -38,16 +39,45 @@ Link to Drone Documentation: https://docs.drone.io
 | DRONE_GIT_ALWAYS_AUTH     | X            | Optional boolean value. Configures Drone to authenticate when cloning public repositories. This is only required when your source code management system (e.g. GitHub Enterprise) has private mode enabled.        | true                     |
 | DRONE_USER_CREATE         | X            | Optional user account that should be created on startup. This should be used to seed the system with an administrative account. It can be a real account (i.e. a real GitHub user) or it can be a machine account. | username:root,admin:true |
 
-
-
 ---
 ---
+
+<div id='OllamaUI'/>
+
+## 🧠 Ollama UI
+Ollama UI is a clean, user-friendly web interface for managing and exploring Ollama models.
+
+### Description:
+Browse installed and remote models, pull new variants with progress feedback, and organize your AI workflows—all in one place.
+Ideal for anyone who wants a simple and efficient way to work with Ollama.
+
+Project: [OllamaUI on GitHub](https://github.com/chrizzo84/OllamaUI)
+Container Repository: `ghcr.io/chrizzo84/ollamaui`
+
+#### Web UI:
+`http://[IP]:[PORT:3000]`
+
+#### Requirements:
+- For GPU acceleration, the 'Nvidia-Driver' plugin from Community Apps must be installed.
+
+### Variables:
+| **Variablename**         | **Required** | **Description**                                              | **Default**                                 |
+|-------------------------|--------------|--------------------------------------------------------------|---------------------------------------------|
+| Web UI Port             | X            | Port for the Web UI                                          | 3000                                        |
+| Ollama API Port         | X            | Port for the Ollama API                                      | 11434                                       |
+| Ollama Models Path      | X            | Storage location for the downloaded Ollama models.           | /mnt/user/appdata/OllamaUI/ollama_models    |
+| UI Database Path        | X            | Storage location for the user interface database.            | /mnt/user/appdata/OllamaUI/ui_database      |
+| PUID                    |              | User ID to run the container as. Default: Unraid 'nobody'.   | 99                                          |
+| PGID                    |              | Group ID to run the container as. Default: Unraid 'users'.   | 100                                         |
+
+
 <div id='Agent'/>
 
 ## 🔩 Azure DevOps Pipelines Agent
-Ubuntu 24.04 Azure Pipelines Agent with some preinstalled software.
+---
+---
 
-### Preinstalled Software:
+Ubuntu 24.04 Azure Pipelines Agent with some preinstalled software.
 - OpenJDK17
 - OpenJDK11
 - OpenJDK 8

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>OllamaUI</Name>
+  <Repository>ghcr.io/chrizzo84/ollamaui</Repository>
+  <Registry>https://github.com/chrizzo84/OllamaUI</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/chrizzo84/OllamaUI/issues</Support>
+  <Project>https://github.com/chrizzo84/OllamaUI</Project>
+  <Overview>Ollama UI is a clean, user-friendly web interface for managing and exploring Ollama models.
+Browse installed and remote models, pull new variants with progress feedback, and organize your AI workflows—all in one place.
+Ideal for anyone who wants a simple and efficient way to work with Ollama.</Overview>
+  <Category>AI:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/OllamaUI/main/docs/static/img/logo.png</Icon>
+  <ExtraParams>--gpus all</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1754848730</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>For GPU acceleration, the 'Nvidia-Driver' plugin from Community Apps must be installed.</Requires>
+  <Config Name="Web UI Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the Web UI" Type="Port" Display="always" Required="true" Mask="{8}">3000</Config>
+  <Config Name="Ollama API Port" Target="11434" Default="11434" Mode="tcp" Description="Port for the Ollama API" Type="Port" Display="always" Required="true" Mask="{8}">11434</Config>
+  <Config Name="Ollama Models Path" Target="/root/.ollama" Default="/mnt/user/appdata/OllamaUI/ollama_models" Mode="rw" Description="Storage location for the downloaded Ollama models." Type="Path" Display="always" Required="true" Mask="{8}">/mnt/user/appdata/OllamaUI/ollama_models</Config>
+  <Config Name="UI Database Path" Target="/app/data" Default="/mnt/user/appdata/OllamaUI/ui_database" Mode="rw" Description="Storage location for the user interface database. (Corrected path)" Type="Path" Display="always" Required="true" Mask="{8}">/mnt/user/appdata/OllamaUI/ui_database</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID to run the container as. Matches Unraid's 'nobody' user." Type="Variable" Display="advanced" Required="false" Mask="{8}">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID to run the container as. Matches Unraid's 'users' group." Type="Variable" Display="advanced" Required="false" Mask="{8}">100</Config>
+  <TailscaleStateDir/>
+</Container>
