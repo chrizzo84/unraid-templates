@@ -15,7 +15,7 @@ Ideal for anyone who wants a simple and efficient way to work with Ollama.</Over
   <Category>AI:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/chrizzo84/OllamaUI/main/docs/static/img/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/ollama_ui.png</Icon>
   <ExtraParams>--gpus all</ExtraParams>
   <PostArgs/>
   <CPUset/>
