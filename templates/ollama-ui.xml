@@ -9,9 +9,11 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/chrizzo84/OllamaUI/issues</Support>
   <Project>https://github.com/chrizzo84/OllamaUI</Project>
-  <Overview>Ollama UI is a clean, user-friendly web interface for managing and exploring Ollama models.
-Browse installed and remote models, pull new variants with progress feedback, and organize your AI workflows—all in one place.
-Ideal for anyone who wants a simple and efficient way to work with Ollama.</Overview>
+  <Overview>OllamaUI: A Unified Experience for Local Large Language Models
+OllamaUI represents more than just a user interface; it is the integration of the core Ollama service with a clean and user-friendly graphical interface. This combination provides a seamless platform for managing and interacting with local large language models.
+With OllamaUI, you can effortlessly browse both locally installed and remote models. The interface allows for pulling new model variants with clear progress feedback and provides tools to organize your AI workflows efficiently in one central location. It is an ideal solution for anyone seeking a straightforward and effective way to utilize the power of Ollama.
+A key feature is the ability to manage other Ollama instances, as the host connection is fully configurable. By setting the the host in the UI you can connect to any Ollama server on your network, allowing for centralized management of multiple, distributed instances.
+The underlying Ollama engine continues to function just as it does in the standard container setup, ensuring a consistent and familiar core experience for existing users. The UI acts as an accessible and intuitive layer, simplifying model management and interaction without altering the fundamental capabilities of Ollama.</Overview>
   <Category>AI:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
