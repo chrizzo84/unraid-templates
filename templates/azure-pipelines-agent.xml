@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Azure-Pipelines-Agent</Name>
-  <Repository>chrizzo84/azpipeline</Repository>
-  <Registry>https://hub.docker.com/repository/docker/chrizzo84/azpipeline</Registry>
+  <Repository>https://github.com/chrizzo84/az-pipeline-ubuntu</Repository>
+  <Registry>https://ghcr.io/chrizzo84/azpipeline</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
