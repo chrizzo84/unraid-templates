@@ -10,9 +10,8 @@ This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> 
 1. [Drone CI Gitea](#Drone)
 2. [Azure DevOps Pipelines Agent](#Agent)
 3. [Ollama UI](#OllamaUI)
+4. [AdGuard Buddy](#AdGuardBuddy)
 4. [Issues](#Issues)
----
----
 
 <div id='Drone'/>
 
@@ -116,6 +115,28 @@ Please bind-mount Docker socket.
 
 ---
 ---
+<div id='AdGuardBuddy'/>
+
+## 🛡️ AdGuard Buddy
+AdGuard Buddy is a simple web frontend for managing multiple AdGuard Home instances from a single dashboard.
+
+### Description:
+AdGuard Buddy provides a user-friendly interface to centrally manage several AdGuard Home servers. You can monitor statistics, logs, and synchronize settings between instances. One server acts as the master, and its settings can be synced to others. The Sync view shows when servers are out of sync, so you always know the current status.
+
+Project: [AdGuard Buddy on GitHub](https://github.com/chrizzo84/adguard-buddy)
+Container Repository: `ghcr.io/chrizzo84/adguard-buddy:latest`
+
+#### Web UI:
+`http://[IP]:[PORT:5050]`
+
+#### Environment Variables:
+| **Variable Name**                              | **Required** | **Description**                                      | **Default**                |
+|------------------------------------------------|--------------|------------------------------------------------------|----------------------------|
+| NEXT_PUBLIC_ADGUARD_BUDDY_ENCRYPTION_KEY       | X            | Used to encrypt/decrypt AdGuard Home passwords       |                            |
+| Web UI Port                                    | X            | Port for the web frontend (external)                 | 5050                       |
+
+#### Support & Issues:
+If you encounter any problems, please open an issue directly in the [AdGuard Buddy GitHub project](https://github.com/chrizzo84/adguard-buddy/issues).
 
 <div id='Issues'/>
 
