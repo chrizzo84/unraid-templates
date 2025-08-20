@@ -13,17 +13,18 @@
 &#xD;
 One server acts as the master, and its settings can be synchronized to the other servers. The Sync view clearly shows when servers are not in sync with the master, so you always know the current status. Easily view, manage, and control several AdGuard installations from a single point &#x2013; perfect for users with multiple AdGuard instances.</Overview>
   <Category>Network:Proxy</Category>
-  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <WebUI>http://[IP]:[PORT:5050]</WebUI>
   <TemplateURL>https://github.com/chrizzo84/unraid-templates/blob/main/templates/adguard-buddy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/adguard_buddy.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1755693273</DateInstalled>
+  <DateInstalled>1755726886</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="PUBLIC_ADGUARD_BUDDY_ENCRYPTION_KEY" Target="NEXT_PUBLIC_ADGUARD_BUDDY_ENCRYPTION_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Your_Encryption_Key</Config>
-  <Config Name="Web UI Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Web UI Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5050</Config>
+  <Config Name="Data Dir" Target="/app/.data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/adguard-buddy</Config>
   <TailscaleStateDir/>
 </Container>
