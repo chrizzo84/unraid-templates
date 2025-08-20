@@ -1,34 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Container>
-  <Name>AdGuard Buddy</Name>
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AdGuardBuddy</Name>
   <Repository>ghcr.io/chrizzo84/adguard-buddy:latest</Repository>
   <Registry>ghcr.io</Registry>
-  <Project>https://github.com/chrizzo84/adguard-buddy</Project>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
   <Support>https://github.com/chrizzo84/adguard-buddy/issues</Support>
-  <Overview>AdGuard Buddy is designed to keep multiple AdGuard Home instances synchronized, allowing you to monitor statistics, logs, and settings of all your AdGuard servers in one place.
-
-One server acts as the master, and its settings can be synchronized to the other servers. The Sync view clearly shows when servers are not in sync with the master, so you always know the current status. Easily view, manage, and control several AdGuard installations from a single point – perfect for users with multiple AdGuard instances.</Overview>
+  <Project>https://github.com/chrizzo84/adguard-buddy</Project>
+  <Overview>AdGuard Buddy is designed to keep multiple AdGuard Home instances synchronized, allowing you to monitor statistics, logs, and settings of all your AdGuard servers in one place.&#xD;
+&#xD;
+One server acts as the master, and its settings can be synchronized to the other servers. The Sync view clearly shows when servers are not in sync with the master, so you always know the current status. Easily view, manage, and control several AdGuard installations from a single point &#x2013; perfect for users with multiple AdGuard instances.</Overview>
   <Category>Network:Proxy</Category>
-  <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/adguard_buddy.png</Icon>
+  <WebUI>http://[IP]:[PORT:5050]</WebUI>
   <TemplateURL>https://github.com/chrizzo84/unraid-templates/blob/main/templates/adguard-buddy.xml</TemplateURL>
-  <Environment>
-    <Variable>
-      <Name>NEXT_PUBLIC_ADGUARD_BUDDY_ENCRYPTION_KEY</Name>
-      <Default></Default>
-      <Description>Used to encrypt/decrypt AdGuard Home passwords</Description>
-      <Type>string</Type>
-      <Required>true</Required>
-    </Variable>
-  </Environment>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Port>
-      <HostPort>5050</HostPort>
-      <ContainerPort>3000</ContainerPort>
-      <Protocol>tcp</Protocol>
-      <Description>Web UI Port</Description>
-    </Port>
-  </Networking>
-  <ExtraParams></ExtraParams>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/adguard_buddy.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1755693273</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PUBLIC_ADGUARD_BUDDY_ENCRYPTION_KEY" Target="NEXT_PUBLIC_ADGUARD_BUDDY_ENCRYPTION_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">lksjdfkas&#xF6;dlfkja&#xF6;lsdkfj&#xF6;lasjdf&#xF6;lasjkdf</Config>
+  <Config Name="Web UI Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5050</Config>
+  <TailscaleStateDir/>
 </Container>
