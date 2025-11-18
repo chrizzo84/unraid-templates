@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>UnstructuredAPI</Name>
+  <Repository>downloads.unstructured.io/unstructured-io/unstructured-api:latest</Repository>
+  <Registry>https://github.com/Unstructured-IO/unstructured-api/pkgs/container/unstructured-api</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
+  <Project>https://unstructured.io/</Project>
+  <Overview>Provides an API to extract text from unstructured documents like PDFs, images, and more. unstructured is an open-source library for preprocessing documents.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/docs</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/refs/heads/main/icons/unstructured.png</Icon>
+  <ExtraParams/>
+  <PostArgs>--port 8000 --host 0.0.0.0</PostArgs>
+  <CPUset/>
+  <DateInstalled>1763460916</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="API Port" Target="8000" Default="8000" Mode="tcp" Description="The port for the API." Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Input Directory" Target="/mnt/input" Default="/mnt/user/appdata/unstructured/input" Mode="rw" Description="The folder containing the documents to be processed." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/unstructured/input</Config>
+  <TailscaleStateDir/>
+</Container>
