@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Perplexica</Name>
+  <Repository>itzcrazykns1337/vane:latest</Repository>
+  <Registry>https://hub.docker.com/r/itzcrazykns1337/vane</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/chrizzo84/unraid-templates/issues</Support>
+  <Project>https://github.com/ItzCrazyKns/Vane</Project>
+  <Overview>Perplexica is an open-source, privacy-focused AI answering engine that runs entirely on your own hardware - an open alternative to Perplexity AI. The project has since been rebranded to "Vane" by its maintainer, but the Docker image and functionality remain the same.&#xD;
+&#xD;
+It combines web search results with local LLMs (via Ollama) or cloud AI providers (OpenAI, Anthropic Claude, Google Gemini, Groq, and more) to deliver accurate, cited answers while keeping your searches completely private.&#xD;
+&#xD;
+This template uses the all-in-one image which bundles SearxNG directly inside the container, so no separate SearxNG container or additional setup is required. Simply start the container, open the Web UI, and configure your AI provider (API keys, models, etc.) in the setup screen.&#xD;
+&#xD;
+If you already run a separate SearxNG instance, use the "itzcrazykns1337/vane:slim-latest" image instead and set a SEARXNG_API_URL environment variable pointing to it.</Overview>
+  <Category>AI:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://github.com/chrizzo84/unraid-templates/blob/main/templates/perplexica.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/chrizzo84/unraid-templates/main/icons/perplexica.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1786995418</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the Perplexica Web UI" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Data Path" Target="/home/vane/data" Default="/mnt/user/appdata/Perplexica/data" Mode="rw" Description="Storage location for settings, search history and uploaded files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Perplexica/data</Config>
+  <TailscaleStateDir/>
+</Container>

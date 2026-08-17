@@ -11,7 +11,8 @@ This repository is under  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -> 
 2. [Azure DevOps Pipelines Agent](#Agent)
 3. [Ollama UI](#OllamaUI)
 4. [AdGuard Buddy](#AdGuardBuddy)
-4. [Issues](#Issues)
+5. [Perplexica](#Perplexica)
+6. [Issues](#Issues)
 
 <div id='Drone'/>
 
@@ -137,6 +138,30 @@ Container Repository: `ghcr.io/chrizzo84/adguard-buddy:latest`
 
 #### Support & Issues:
 If you encounter any problems, please open an issue directly in the [AdGuard Buddy GitHub project](https://github.com/chrizzo84/adguard-buddy/issues).
+
+<div id='Perplexica'/>
+
+## 🔎 Perplexica
+Perplexica is an open-source, privacy-focused AI answering engine - an alternative to Perplexity AI. The project has since been rebranded to "Vane" by its maintainer, but the Docker image and functionality remain the same.
+
+### Description:
+Perplexica combines web search results with local LLMs (via Ollama) or cloud AI providers (OpenAI, Anthropic Claude, Google Gemini, Groq, and more) to deliver accurate, cited answers while keeping your searches completely private.
+
+This template uses the **all-in-one image which bundles SearxNG directly inside the container**, so no separate SearxNG container or additional setup is required. Simply start the container, open the Web UI, and configure your AI provider (API keys, models, etc.) in the setup screen.
+
+If you already run a separate SearxNG instance, use the `itzcrazykns1337/vane:slim-latest` image instead and set a `SEARXNG_API_URL` environment variable pointing to it.
+
+Project: [Vane (formerly Perplexica) on GitHub](https://github.com/ItzCrazyKns/Vane)
+Container Repository: `itzcrazykns1337/vane:latest`
+
+#### Web UI:
+`http://[IP]:[PORT:3000]`
+
+### Variables:
+| **Variablename** | **Required** | **Description**                                                    | **Default**                       |
+|-------------------|--------------|----------------------------------------------------------------------|------------------------------------|
+| Web UI Port       | X            | Port for the Perplexica Web UI                                       | 3000                               |
+| Data Path         | X            | Storage location for settings, search history and uploaded files.    | /mnt/user/appdata/Perplexica/data  |
 
 <div id='Issues'/>
 
